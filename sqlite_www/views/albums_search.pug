@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 Find albums by artist:
+    form(action="/albums/list" method="POST")
+        label(for="artist") Artist:
+        input(id="artist" type="text" name="artist")
+        input(type="submit" value="Search") 

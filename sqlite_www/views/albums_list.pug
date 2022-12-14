@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 Albums of #{artist}: 
+  ul 
+    each album in albums_data
+      li #{album.Title}
