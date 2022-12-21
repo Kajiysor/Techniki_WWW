@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 Employees: 
+  ul 
+    each employee in employees_data
+      li #{employee.FirstName} #{employee.LastName}
